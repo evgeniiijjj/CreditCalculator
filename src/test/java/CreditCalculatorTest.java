@@ -13,7 +13,7 @@ public class CreditCalculatorTest {
     @BeforeAll
     @Test
     static void getCalculatorTest() {
-        calculator = CreditCalculator.getCalculator(loanAmount, annualInterestRate, paymentTerm);
+        calculator = CreditCalculatorImpl.getCalculator(loanAmount, annualInterestRate, paymentTerm);
         assertNotNull(calculator);
     }
 
